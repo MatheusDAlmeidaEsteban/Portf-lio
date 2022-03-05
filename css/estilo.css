@@ -48,20 +48,21 @@
 }
 
 .home h2 {
-    border-right: 2px solid rgba(173, 255, 47, .75);
     overflow: hidden;
+    border-right: 2px solid rgba(173, 255, 47, .75);
     font-size: 4.5rem;
 }
 
 
 /* Animação home */
 
-.h2anima {
-    animation: Cursor 300ms infinite normal, digitandoh2 4s steps(40) 5s normal;
+.h1Anima {
+    animation: invisivelH1 1s 0s normal, digitandoh1 4s steps(40) 0s normal;
+    visibility: visible;
 }
 
-.h1anima {
-    animation: Cursor 300ms normal, digitandoh1 4s steps(40) 1s normal;
+.h2Anima {
+    animation: Cursor 300ms 8s infinite normal, digitandoh2 4s steps(40) 4s normal;
 }
 
 @keyframes digitandoh2 {
@@ -81,7 +82,8 @@
     to {
         border-right: 2px solid rgba(173, 255, 47, .75);
         width: 12.15em;
-        border-right-color: black
+        border-right-color: black;
+        visibility: visible;
     }
 }
 
