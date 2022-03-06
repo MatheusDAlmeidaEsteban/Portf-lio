@@ -1,3 +1,6 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 /* navegacao*/
 
 .cabecalho {
@@ -6,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(8, 3, 10);
+    background-color: rgb(7, 5, 8);
     padding: 10px;
 }
 
@@ -15,6 +18,7 @@
     margin: 0 0.5rem;
     color: azure;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nave:hover {
@@ -22,18 +26,17 @@
 }
 
 .cabecalho .logo {
-    width: 7vw;
-    height: 7vh;
+    width: 5vw;
+    height: 5vh;
     border-radius: 5px;
 }
 
 
 /* Home */
-
 .home {
     width: 100%;
-    height: 90vh;
-    background-color: black;
+    height: 92vh;
+    background-color:  #000000;
     color: rgb(173, 255, 47);
     display: flex;
     flex-direction: column;
@@ -43,47 +46,30 @@
 }
 
 .home h1 {
-    overflow: hidden;
     font-size: 4.5rem;
 }
 
 .home h2 {
-    overflow: hidden;
     border-right: 2px solid rgba(173, 255, 47, .75);
     font-size: 4.5rem;
 }
 
 
 /* Animação home */
-
-.h1Anima {
-    animation: invisivelH1 1s 0s normal, digitandoh1 4s steps(40) 0s normal;
-    visibility: visible;
+.hAnima1 {
+    animation: digitandoh 3s steps(40) 0s normal, Cursor 300ms 0s infinite normal;
 }
 
-.h2Anima {
-    animation: Cursor 300ms 8s infinite normal, digitandoh2 4s steps(40) 4s normal;
+.hAnima2 {
+    animation: digitandoh 3s steps(40) 0s normal, Cursor 300ms 3s infinite normal;
 }
 
-@keyframes digitandoh2 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 9.05em;
-    }
-}
-
-@keyframes digitandoh1 {
+@keyframes digitandoh {
     from {
         border-right: 2px solid rgba(173, 255, 47, .75);
-        width: 0;
     }
     to {
         border-right: 2px solid rgba(173, 255, 47, .75);
-        width: 12.15em;
-        border-right-color: black;
-        visibility: visible;
     }
 }
 
@@ -94,4 +80,65 @@
     to {
         border-right-color: transparent;
     }
+}
+
+/* sobre mim */
+.sobreMim {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url(../img/sobreMim/background-sobreMim.gif);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+
+
+
+.textoSobreMim-titulo{  
+   
+    height: 30%;
+    font-size: 3.5rem;
+    align-items: center;
+    display: flex;
+    padding: 2%  2%;
+   
+}
+
+.textoSobreMim-titulo-texto{
+    width: 50%;
+    height: 70%;
+    color: azure;
+    padding: 2%  2%;
+
+}
+.canvasSobreMim{
+    background-color: white;
+}
+
+/* sobre mim animacao */
+@keyframes pular{
+    from{
+        position: relative;
+        top: -8px;
+        color: rgb(173, 255, 47);
+       
+    }
+    to{
+        position: relative;
+        top: 0px;
+    }
+
+}
+
+.sobreMimh2:hover{
+    animation: pular 500ms 0s normal;
+}
+#textoSobreMim-P:hover{
+    color: rgb(173, 255, 47);
 }
