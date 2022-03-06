@@ -125,7 +125,7 @@ body{
 @keyframes pular{
     from{
         position: relative;
-        top: -8px;
+        top: -10px;
         color: rgb(173, 255, 47);
        
     }
