@@ -227,7 +227,7 @@ em {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(173, 255, 47,0.2);
+    border: 2px solid rgba(4, 10, 92, 0.6);
     box-sizing: border-box;
     position: absolute;
 }
@@ -368,7 +368,7 @@ em {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(173, 255, 47,0.2);
+    border: 2px solid rgba(4, 10, 92, 0.6);
     box-sizing: border-box;
     position: absolute;
 }
