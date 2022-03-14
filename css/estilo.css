@@ -467,6 +467,75 @@ em {
     height: 200px;
 }
 
+.formacao{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Formação/formação_background.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.alura_formacao{
+    width: 40vw;
+    height: 50vh;
+    opacity: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+.alura_formacao img{
+    width: 35vw;
+    height: 30vh;
+    margin: 10px 25px;
+}
+.alura_formacao h3{
+    color: #ffff;
+    font-size: 2rem;
+}
+
+.alura_formacao p{
+    color: #ffff;
+    font-size: 1.2rem;
+}
 
 
+.alura_ufc{
+    width: 40vw;
+    height: 50vh;
+    opacity: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 5px;
+}
+
+.alura_ufc img{
+    width: 35vw;
+    height: 30vh;
+    margin: 15px 0;
+   
+}
+.alura_ufc h3{
+    
+    color: #ffff;
+    font-size: 2rem;
+    
+}
+
+.alura_ufc p{
+    color: #ffff;
+    font-size: 1.2rem;
+}
 
