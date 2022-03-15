@@ -467,6 +467,7 @@ em {
     height: 200px;
 }
 
+
 .formacao{
     width: 100%;
     height: 100vh;
@@ -482,7 +483,7 @@ em {
 .alura_formacao{
     width: 40vw;
     height: 50vh;
-    opacity: 95%;
+    opacity: 90%    ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -507,11 +508,10 @@ em {
     font-size: 1.2rem;
 }
 
-
 .alura_ufc{
     width: 40vw;
     height: 50vh;
-    opacity: 95%;
+    opacity: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
