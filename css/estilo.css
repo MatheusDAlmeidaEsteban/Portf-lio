@@ -227,7 +227,7 @@ em {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(4, 10, 92, 0.6);
+    border: 2px solid rgba(173, 255, 47,0.3);
     box-sizing: border-box;
     position: absolute;
 }
@@ -368,7 +368,7 @@ em {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(4, 10, 92, 0.6);
+    border: 2px solid rgba(173, 255, 47,0.3);
     box-sizing: border-box;
     position: absolute;
 }
@@ -556,6 +556,7 @@ em {
     font-size: 1.2rem;
 }
 
+
 .trabalhos{
     width: 100%;    
     height: 248vh;
@@ -606,7 +607,7 @@ em {
     width: 1200px;
     height: 420px;
     border-radius: 10px;
-    opacity: 92%;
+    opacity: 98%;
     transition: all 1s;
     cursor: pointer;
     position: relative;
@@ -641,7 +642,7 @@ em {
     width: 1200px;
     height: 420px;
     border-radius: 10px;
-    opacity: 92%;
+    opacity: 98%;
     transition: all 1s;
     cursor: pointer;
     position: relative;
@@ -670,7 +671,7 @@ em {
     width: 1200px;
     height: 420px;
     border-radius: 10px;
-    opacity: 92%;
+    opacity: 98%;
     transition: all 1s;
     cursor: pointer;
     position: relative;
@@ -696,3 +697,149 @@ em {
 
 
 
+.contato{
+    width: 100%;    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/formulario/background-formulario.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: azure;
+    position: relative;
+    top: 1575px;
+   
+}
+.contato-titulo{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+
+
+.formulario{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+   
+
+}
+.formulario-contato{
+    width: 40vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #000000;
+    border-radius: 15px;
+    opacity: 95%;
+}
+
+.input-campo{
+    position: relative ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    outline: none;
+    color: #ffff;
+    font-size: 15px;
+    width: 38vw;
+    letter-spacing: 1.5px;
+}
+.input-label{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input:focus ~.input-label, .input:valid ~.input-label{
+    top: -25px;
+    font-size: 12px;
+    
+}
+.formulario-textarea{
+    width: 38vw;
+    height: 145px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #ffff;
+    letter-spacing: 1.5px;
+    outline: none;
+    color: #ffff;
+    font-size: 15px;
+  
+    letter-spacing: 1.5px;
+}
+.input-textarea{
+    position: relative;
+    top: -150px;
+    pointer-events: none;
+    transition: .5s;
+}
+.formulario-textarea:focus ~.input-textarea,.formulario-textarea:valid ~.input-textarea{
+    top: -180px;
+    font-size: 12px;
+
+}
+.input-enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enviar   {
+    width: 30vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: black;
+    color: #ffff;
+    padding: 10px;
+    transition: .5s;
+    animation: efeito-enviar ease infinite;
+}
+
+.enviar:hover{
+    transition: 5s;
+    transform: scale(1.2);
+}
+
+.rotape{
+    width: 98.5vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    margin: 0 10px;
+
+
+}
+.rotape img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
