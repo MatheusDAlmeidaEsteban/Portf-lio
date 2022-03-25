@@ -1,3 +1,26 @@
+//navbar mobile
+const btnNav = document.getElementById("mobile-menu");
+const menu = document.getElementById("navegacao");
+const nave = document.getElementById("nave");
+
+btnNav.addEventListener("click",()=>{
+    if(menu.style.display =="flex"){
+        menu.style.display = "none"
+        if( btnNav.style.right = "194px"){
+            btnNav.style.right = "30px"
+        }
+        
+    }
+    else{
+        menu.style.display = "flex"
+        if( btnNav.style.right = "30px"){
+            btnNav.style.right = "194px"
+        }
+        
+    }
+
+
+ })
 //Animicação pagina home
 const elementoH1 = document.getElementById("hAnima1");
 const elementoH2 = document.getElementById("hAnima2");

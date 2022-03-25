@@ -1,102 +1,161 @@
 @media screen and (max-width: 764px) {
-    .cabecalho{
-        width: auto;
-        height: auto;
-
+    /* cabeçalho*/
+    .cabecalho {
+        width: 94%;
+        height: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 3%;
+    
     }
-    .mobile-menu {
+    .cabecalho .logo{
+        width: 8vw;
+        height: 5vh;
+        
+    }
+    .mobile-menu{
+        display: block;
+        position: relative;
+        right: 30px;
+        transition: .3s;
+    }
+    
+    .navegacao{
+        height: 30%;
+        position: absolute;
+        right: 0;
+        top: 7.87vh;
         display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+        
+        transition: .5s;
+    }
+    .cabecalho .nave {
+        font-size: 1rem;
+        margin: 10px ;
+        color: azure;
+        text-decoration: none;
         cursor: pointer;
-      }
-      
-      .mobile-menu div {
-        width: 32px;
-        height: 2px;
-        background: #fff;
-        margin: 8px;
-        transition: 0.3s;
-      }
+        
+    }
     
-    
-
+    /* home*/
     .home{
         width: 100%;
-        height: 98.5vh;
-        background-image: url(../img/giphy.gif);
+        height: 75vh;
     }
-    .home h1 {
-        font-size: 1.5rem;
-    }
-    .home h2 {
-        border-right: 2px solid rgba(173, 255, 47, .75);
-        font-size: 1.5rem;
+    .home h1,.home h2{
+        font-size: 1.3rem;
     }
 
     .sobreMim{
-        width: 100vw;
-        height: 100vh;
-        flex-direction: column;
+        width: auto;
+        height: 70vh;
+        background-image: none;
+        background-position: none;
+        background-repeat: none;
+        background-size: none;
         align-items: center;
-        background-image: url(../img/sobreMim/gifs-de-anime-aesthetic-49.gif);
-        background-repeat: no-repeat;
-        background-size: 100%;
+        justify-content: center;
+       
         
     }
-
     .texto-titulo{
-        font-size: 1.7rem;
-      
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+        padding: 2px 0.5%;
     }
+    
     .textoSobreMim-titulo-texto{
         width: 100%;
-        font-size: 1rem;
-        align-items: center ;
-        padding: 1%  1%;
+        font-size: 0.85rem;
+        padding: 2px 0.5%;
+        align-items: center;
     }
 
+    /*hobbies e skill*/
+   
     .hobbies{
-        width: 100%;
-        height: 100vh;
+        width: auto;
+        height: 150vh;
+        flex-direction: column;
+        background-image: none;
+        background-image: url(../img/sobreMim/background-image-galaxy.gif);
+        background-size: 100%;
+        background-repeat: repeat;
+       
+       
     }
     .hobbie-titulo{
-        font-size: 1.7rem;
+        display: none;
     }
+    .hobbie-titulo-mobile{
+        display:flex;
+        font-size: 2.5rem;
+        color: #fff;
+        background-image: url(../img/sobreMim/background-image-galaxy.gif);
+        background-size: 100%;
+       
+       
+    }
+
+    /* cubo 1*/
     .caixa-hobbie{
-        width: 50px;
-        height: 50px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 110px;
+        left: 88px ;
+        transform: rotateX(-11deg);
+        animation: mover1 30s normal infinite;
+        background-image: url(../img/sobreMim/background-image-galaxy.gif);
+        background-size: 100%;
+        background-clip: padding-box;
+       
     }
     .face1{
-        width: 50px;
-        height: 50px;
+        width: 200px;
+        height: 200px;
+        opacity: 95%;
+        
     }
     #esquerda1{
-        right: 25px;
+        right: 100px;
         transform: rotateY(-90deg);
         
     }
     #direita1{
-        left: 25px;
+        left: 100px;
         transform: rotateY(90deg);
         
     }
     #cima1{
-        bottom: 25px;
+        bottom: 100px;
         transform: rotateX(90deg);
         
     }
     #baixo1{
-        top:25px;
+        top: 100px;
         transform: rotateX(-90deg);
         
     }
     #frente1{
-        transform: translateZ(25pxpx);
+        transform: translateZ(100px);
     }
     #atras1{
-        transform: translateZ(-25pxpx) rotateX(360deg) rotateY(180deg);
+        transform: translateZ(-100px) rotateX(360deg) rotateY(180deg);
     }
+    
     .livro-hobbie{
-        width: 350px;
+        width: 250px;
         height: 150px;
        
     }
@@ -105,48 +164,481 @@
         font-family: 'Montserrat', sans-serif;
     }
     .fone-hobbie{
-        width: 50px;
-        height: 80px;
+        width: 250px;
+        height: 160px;
     }
     .fone-hobbie-texto{
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: 'Montserrat', sans-serif;
         position: relative;
         top:20px;
         left:45px
     }
     .games-hobbie{
-        width: 50px;
-        height: 40px;
+        width: 250px;
+        height: 150px;
     }
     .games-hobbie-texto{
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: 'Montserrat', sans-serif;
     }
     .filme-hobbie{
-        width: 50px;
-        height: 40px;
+        width: 180px;
+        height: 150px;
     }
     .filme-hobbie-texto{
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: 'Montserrat', sans-serif;
     }
     .animes-hobbie{
-        width: 50px;
-        height: 40px;
+        width: 250px;
+        height: 200px;
     }
     .animes-hobbie-texto{
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: 'Montserrat', sans-serif;
     }
     .tocar-hobbie{
-        width: 50px;
-        height: 40px;
+        width: 200px;
+        height: 150px;
     }
     .tocar-hobbie-texto{
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: 'Montserrat', sans-serif;
     }
+
+    @keyframes mover1 {
+        10%{
+            transform: rotateY(90deg) rotate(-11deg);
+        }
+        20%{
+            transform: rotateY(180deg) rotateX(15deg);
+        }
+        30%{
+            transform: rotateY(270deg) rotate(12deg);
+        }
+        40%{
+            transform: rotateY(360deg) rotateX(-12deg);
+        }
+        50%{
+            transform:  rotateX(70deg);
+        }
+        60%{
+            transform:  rotateX(250deg);
+        }
+       
     
+    }
+
+    .hobbie-titulo-mobile1{
+        position: relative;
+        top: 400px;
+        display: flex;
+        font-size: 2.5rem;
+        background-image: url(../img/sobreMim/background-image-galaxy.gif);
+        background-size: 100%;
+        background-clip: padding-box;
+    }
+
+    
+    /* cubo2 */
+    .caixa-skill{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 525px;
+        left: 88px ;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg) rotateX(11deg);
+        animation: mover2 30s infinite normal;  
+    }
+    .caixa{
+        background-image: url(../img/sobreMim/background-image-galaxy.gif);
+        background-size: 100%;
+        background-clip: padding-box;
+    }
+
+    .face2{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(0, 0, 0) ;
+        opacity: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgba(173, 255, 47,0.3);
+        box-sizing: border-box;
+        position: absolute;
+        
+        
+    }
+    #esquerda2{
+        right: 100px;
+        transform: rotateY(-90deg);
+        
+    }
+    #direita2{
+        left: 100px;
+        transform: rotateY(90deg);
+        
+    }
+    #cima2{
+        bottom: 100px;
+        transform: rotateX(90deg);
+        
+    }
+    #baixo2{
+        top: 100px;
+        transform: rotateX(-90deg);
+        
+    }
+    #frente2{
+        transform: translateZ(100px);
+    }
+    #atras2{
+        
+        transform: translateZ(-100px) rotateX(360deg) rotateY(180deg);
+        
+    }
+
+    @keyframes mover2 {
+       
+        10%{
+            transform: rotateY(90deg) rotate(11deg);
+        }
+        20%{
+            transform: rotateY(180deg) rotateX(-12deg);
+        }
+        30%{
+            transform: rotateY(270deg) rotate(-12deg);
+        }
+        40%{
+            transform: rotateY(360deg) rotateX(110deg);
+        }
+        50%{
+            transform:  rotateX(290deg);
+        }
+        
+       
+       
+    
+
+    }
+
+    .html-skill{
+        align-items: center;
+        width: 400px;
+        height: 200px;
+    }
+    .css-skill{
+        align-items: center;
+        width: 400px;
+        height: 225px;
+    }
+    .js-skill{
+        align-items: center;
+        width: 400px;
+        height: 200px;
+    }
+    .C-skill{
+        align-items: center;
+        height: 225px;
+    }
+    .python-skill{
+        align-items: center;
+        width: 40vw;
+        height: 200px;
+    }
+    .php-skill{
+        align-items: center;
+        width: 400px;
+        height: 200px;
+    }
+
+    /* formacao*/
+    .formacao{
+        width: auto;
+        height: 100vh;
+        background-image: url(../img/Formação/FirsthandParchedEasteuropeanshepherd-size_restricted.gif);
+        background-size: 100%;
+    }
+    .formacao-titulo{
+        height: 5%;
+    }
+    .formacoes{
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        background-image: url(../img/Formação/FirsthandParchedEasteuropeanshepherd-size_restricted.gif);
+        background-size: 100%;
+    }
+    .alura_formacao{
+        width: auto;
+        height: 30%;
+        background: none;
+        backdrop-filter:nonr;
+        -webkit-backdrop-filter:none;
+        border-radius: 5px;
+        position: relative;
+        left: 0;
+        top: -80px;
+        margin: 10px 0;
+       
+    }
+    .alura_formacao img{
+        width: 80vw;
+        height: 20vh;
+        
+    }
+    .alura_formacao h3{
+        color: #ffff;
+        font-size: 1.3rem;
+    }
+    
+    .alura_formacao p{
+        color: #ffff;
+        font-size: 1.2rem;
+    }
+    
+    .alura_ufc{
+        width: auto;
+        height: 30vh;
+        opacity: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border-radius: 5px;
+        top: 0px;
+        left: 0;
+        
+    }
+    
+    .alura_ufc img{
+        width: 80vw;
+        height: 30vh;
+      
+       
+    }
+    .alura_ufc h3{
+    
+        color: #ffff;
+        font-size: 1.3rem;
+        
+    }
+    
+    .alura_ufc p{
+        color: #ffff;
+        font-size: 1.2rem;
+    }
+    
+    /* trabalhos*/
+    .trabalhos{
+        width: auto;    
+        height: 200vh;
+   }
+    .trabalhos h2{
+        font-size: 2.5rem;
+    }
+
+    .trabalhos-titulo{
+        
+        height: 50px;
+        font-size: 2.5rem;
+        margin-top: 30px;
+        
+    }
+
+    .trabalhos-{
+        width: 100vw;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+    } 
+    .pagina-trabalhos2,.pagina-trabalhos1,.pagina-trabalhos,.apresentacao-trabalhos2,.apresentacao-trabalhos1,.apresentacao-trabalhos   {
+        display: none;
+    }
+    .desktop-trabalhos{
+        display: none;
+    }
+    .desktop-link{
+        display: none;
+    }
+    
+    .mobile-trabalho{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+       
+        
+    }
+    .mobile-trabalho img{
+        width: 98vw;
+        height: 50vh;
+       border-radius: 5px;
+      
+    }
+    .mobile-trabalho1{
+        display: block;
+        
+        
+    }
+    .mobile-trabalho1 img{
+        width: 98vw;
+        height: 50vh;
+      
+        border-radius: 5px;
+    }
+
+    .mobile-trabalho2{
+        display: block;
+      
+        
+    }
+    .mobile-trabalho2 img{
+        width: 98vw;
+        height: 50vh;
+    }
+
+    /* contatos*/
+    #contato{
+        width: auto; 
+        height: 113vh;   
+        top: 200vh;
+        background-image: url(../img/formulario/background-formulario.gif);
+        background-repeat:round;
+        background-size: 100%;
+       
+        
+       
+       
+    }
+    .contato-titulo{
+        width: auto;
+        height: 10vh;
+        font-size: 2.5rem;
+    }
+    
+    
+    .formulario{
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+       
+    
+    }
+    .formulario-contato{
+        width: auto;
+        height: 70vh;
+      
+    }
+    
+    .input-campo{
+        position: relative ;
+        display: flex;
+        position: relative;
+        left: 0;
+        
+        
+        
+        
+    }
+    
+    .input{
+        width: 83vw;
+        
+    }
+    .input-label{
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        pointer-events: none;
+        transition: .5s;
+    }
+    .input:focus ~.input-label, .input:valid ~.input-label{
+        top: -25px;
+        font-size: 12px;
+        
+    }
+    .formulario-textarea{
+        width: 83vw;
+        height: 100px;
+        
+      
+    }
+    .input-textarea{
+        position: relative;
+        top: -100px;
+        left: 10px;
+        pointer-events: none;
+        transition: .5s;
+    }
+    .formulario-textarea:focus ~.input-textarea,.formulario-textarea:valid ~.input-textarea{
+        top: -140px;
+        font-size: 12px;
+    
+    }
+    .input-enviar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .enviar   {
+        width: 30vw;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        border-radius: 10px;
+        background-color: black;
+        color: #ffff;
+        padding: 10px;
+        transition: .5s;
+        animation: efeito-enviar ease infinite;
+    }
+    
+    .enviar:hover{
+        transition: 5s;
+        transform: scale(1.2);
+    }
+    
+    .rotape{
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        margin: 0 10px;
+        position: relative;
+        top: 31px;
+        
+    
+    }
+    .rotape p{
+        font-size: .9rem;
+    }
+   .logo1{
+      display: none;
+  }
+    
+   
+    
+    
+
     
 }

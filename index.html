@@ -27,21 +27,23 @@
             </a>
         </div>
 
-        <div class="navegacao">
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            
-            <td class="teste">
-                <tr><a class="nave" href="#sobreMim" rel="sobre">Sobre Mim</a></tr>
-                <tr><a class="nave" href="#hobbies" rel="hobbie">Hobbies e Soft Skills</a></tr>
-                <tr><a class="nave" href="#formacao" rel="formacoes">Formação</a></tr>
-                <tr><a class="nave" href="#trabalhos" rel="trabalhos">Trabalhos</a></tr>
-                <tr><a class="nave" href="#contato" rel="contato">Contato</a></tr>
-                <tr><a class="nave" href="#" rel="Curriculum">Curriculum</a></tr>
+        <div class="mobile-menu"  id="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="navegacao" id="navegacao">
+
+            <td class="menu" >
+                <tr><a id="nave" class="nave" href="#sobreMim" rel="sobre">Sobre Mim</a></tr>
+                <tr><a id="nave" class="nave" href="#hobbies" rel="hobbie">Hobbies e Soft Skills</a></tr>
+                <tr><a id="nave" class="nave" href="#formacao" rel="formacoes">Formação</a></tr>
+                <tr><a id="nave" class="nave" href="#trabalhos" rel="trabalhos">Trabalhos</a></tr>
+                <tr><a id="nave" class="nave" href="#contato" rel="contato">Contato</a></tr>
+                <tr><a id="nave" class="nave" href="#" rel="Curriculum">Curriculum</a></tr>
             </td>
+
         </div>
     </header>
 
@@ -73,8 +75,8 @@
                 <div class="textoSobreMim-titulo-texto">
                     <p>
 
-                       <em class="enfase">Olá!</em> <br><br>Sou <strong>Matheus De Almeida Esteban</strong>, sou aluno da <strong>Universidade Federal do Ceará (UFC)</strong> do curso de <em>engenharia de Telecomunicações</em>. Apesar, da minha formação na  <em>engenharia</em> sempre tive grande interesse na área de <em>Full Stack Developer</em>> <br>e <em>inteligência artificial</em>.
-                        <br><br>Estou sempre procurando uma nova oportunidade de aprendizado, com o  Google, professores e meus editores tanto <br>no notebook quanto no celular. Sempre fascínio na área de programação e curiosidade de como <em>jogos</em>, <em>programas</em> e <br> <em>sites</em> são construídos.
+                       <em class="enfase">Olá!</em> <br><br>Sou <strong>Matheus De Almeida Esteban</strong>, sou aluno da <strong>Universidade Federal do Ceará (UFC)</strong> do curso de <em>engenharia de Telecomunicações</em>. Apesar, da minha formação na  <em>engenharia</em> sempre tive grande interesse na área de <em>Full Stack Developer</em> e <em>inteligência artificial</em>.
+                        <br><br>Estou sempre procurando uma nova oportunidade de aprendizado, com o  Google, professores e meus editores tanto <br>no notebook quanto no celular. Sempre fascínio na área de programação e curiosidade de como <em>jogos</em>, <em>programas</em> e  <em>sites</em> são construídos.
                         Esse portefólio tem de me apresentar de <em>forma divertida</em> que as maneiras tradicionais. Foi usado <br> <em>JavaScript</em>, <em>HTML5</em> e <em> CSS3</em> para a construção.
 
                         <br><br><br><br><br><br>
@@ -112,8 +114,19 @@
                     <h2 class="sobreMimh2">s</h2>
             </div>
 
-            <div class="caixa">
+            <div class="hobbie-titulo-mobile">
+                <h2 class="sobreMimh2">H</h2>
+                <h2 class="sobreMimh2">o</h2>
+                <h2 class="sobreMimh2">b</h2>
+                <h2 class="sobreMimh2">b</h2>
+                <h2 class="sobreMimh2">i</h2>
+                <h2 class="sobreMimh2">e</h2>
+                <h2 class="sobreMimh2">s</h2>
 
+            </div>
+
+            <div class="caixa">
+                
                 <div class="caixa-hobbie">
 
                     <div class="face1" id="frente1" ><p class="livro-hobbie-texto">Ler</p><img class="livro-hobbie" src="img/SkillsHobbies/livro-Figura.png" alt="livro Figura"></div>
@@ -123,6 +136,16 @@
                     <div class="face1" id="cima1" ><p class="animes-hobbie-texto">Animes</p><img class="animes-hobbie" src="img/SkillsHobbies/animes-figura.png" alt="animes Figura"></div>
                     <div class="face1" id="baixo1" ><p class="tocar-hobbie-texto">Tocar</p><img class="tocar-hobbie" src="img/SkillsHobbies/tocar-figura.png" alt="tocar Figura"></div>
 
+                </div>
+
+                <div class="hobbie-titulo-mobile1">
+                    <h2 class="sobreMimh2">S</h2>
+                    <h2 class="sobreMimh2">K</h2>
+                    <h2 class="sobreMimh2">i</h2>
+                    <h2 class="sobreMimh2">l</h2>
+                    <h2 class="sobreMimh2">l</h2>
+                    <h2 class="sobreMimh2">s</h2>
+    
                 </div>
 
                 <div class="caixa-skill">
@@ -189,28 +212,53 @@
             </div>
             
            <div class="trabalhos-">
-                <div class="apresentacao-trabalhos" id="apresentacao-trabalhos">
-                <img src="img/trabalhos/Codificador.png" alt="criptografar pagina">
+                <div class="desktop-trabalhos" class="apresentacao-trabalhos" id="apresentacao-trabalhos">
+                     <img class="desktop-trabalhos" src="img/trabalhos/Codificador.png" alt="criptografar pagina">
                 </div>
                 <div class="pagina-trabalhos" id="pagina-trabalhos">
-                <a href="https://matheusdalmeidaesteban.github.io/Desafio-Semana-1/" rel="criptografar site" target="_back"> Visualizar ➚</a>
+                     <a class="desktop-link" href="https://matheusdalmeidaesteban.github.io/Desafio-Semana-1/" rel="criptografar site" target="_back"> Visualizar ➚</a>
                 </div>
+
            </div>
+           <div class="mobile-trabalho">
+                <a class="mobile-link" href="https://matheusdalmeidaesteban.github.io/Desafio-Semana-1/" rel="criptografar site" target="_back">
+                    <img src="img/trabalhos/Codificador.mobile.png" alt="criptografar pagina">
+                </a>
+          </div>
 
            <div class="trabalhos-">
                 <div class="apresentacao-trabalhos1" id="apresentacao-trabalhos1">
-                <img src="img/trabalhos/snake game.png" alt="snakeGame pagina">
+                     <img class="desktop-trabalhos" src="img/trabalhos/snake game.png" alt="snakeGame pagina">
                 </div>
                 <div class="pagina-trabalhos1" id="pagina-trabalhos1">
-                <a href="https://matheusdalmeidaesteban.github.io/snake-game/" rel="snakeGame site" target="_back"> Visualizar ➚</a>
+                    <a class="desktop-link" href="https://matheusdalmeidaesteban.github.io/snake-game/" rel="snakeGame site" target="_back"> Visualizar ➚</a>
+                </div>
+
             </div>
+
+            
+            <div class="mobile-trabalho1">
+                <a class="mobile-link1"  href="https://matheusdalmeidaesteban.github.io/snake-game/" rel="snakeGame site" target="_back">
+                    <img src="img/trabalhos/snake game-mobile.png" alt="snakeGame pagina">
+                </a>
+            </div>
+
 
             <div class="trabalhos-">
                 <div class="apresentacao-trabalhos2" id="apresentacao-trabalhos2">
-                <img src="img/trabalhos/jogo da forca.png" alt="jogo da forca pagina">
+                     <img class="desktop-trabalhos"  src="img/trabalhos/jogo da forca.png" alt="jogo da forca pagina">
                 </div>
                 <div class="pagina-trabalhos2" id="pagina-trabalhos2">
-                <a href="https://matheusdalmeidaesteban.github.io/Jogo-da-forca/" rel="jogo da forca site" target="_back"> Visualizar ➚</a>
+                     <a class="desktop-link" href="https://matheusdalmeidaesteban.github.io/Jogo-da-forca/" rel="jogo da forca site" target="_back"> Visualizar ➚</a>
+                </div>
+
+                
+                
+            </div>
+            <div class="mobile-trabalho2">
+                <a class="mobile-link" href="https://matheusdalmeidaesteban.github.io/Jogo-da-forca/" rel="jogo da forca site" target="_back">
+                    <img src="img/trabalhos/jogo da forca.mobile.png" alt="jogo da forca pagina">
+                </a>
             </div>
        </div>
             
@@ -269,7 +317,7 @@
                 <p class=" Copyright "> ©Copyright Matheus de Almeida Esteban - 2022</p>
                 <div>
                     <a href="https://www.linkedin.com/in/matheus-de-almeida-esteban-8760b0233/" target="_blank">
-                        <img class="logo" src="img/linkedin-logo.png" alt="Logo Linkedin">
+                        <img class="logo1" src="img/linkedin-logo.png" alt="Logo Linkedin">
                     </a>
                     <a href="https://github.com/MatheusDAlmeidaEsteban" target="_blank">
                         <img class="logo" src="img/git-logo.png" alt="Logo Github">
